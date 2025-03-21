@@ -25,11 +25,11 @@
     </nav>
 
     <main id="inicio" class="cabecalho">
-        <div>
-            <img src="/img/duck.jpeg" alt="Foto de Mauricio R" class="foto-perfil">
-            <h1>Rodolfo Mori</h1>
-            <p>Desenvolvedor </p>
-        </div>
+        
+            <img src="./img/duck.jpeg" alt="Foto de Mauricio R" class="foto-perfil">
+            <h1>Mauricio Roberto</h1>
+            <p class="cabecalho-sub-titulo">Desenvolvedor </p>
+        
     </main>
 
     <section id="sobre" class="sobre">
@@ -48,20 +48,26 @@
             
             <div class="projetos-card">
                 <img src="./img/galaxy.jpeg" alt="Projeto 1" class="projetos-imagem">
-                <h3 class="">Análise de dados</h3>
-                <p class="paragrafo-projetos"> Modelo de predição de dados astronômicos</p>
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">Análise de dados</h3>
+                    <p class="paragrafo-projetos"> Modelo de predição de dados astronômicos utilizando machine learning</p>
+                </div>
             </div>
             
             <div class="projetos-card">
                 <img src="./img/banco-dados-img.png" alt="Projeto 1" class="projetos-imagem">
-                <h3 class="">Banco de dados</h3>
-                <p class="paragrafo-projetos"> Projeto de integração banco de dados Sql com Flask utilizando docker</p>
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">Banco de dados</h3>
+                    <p class="paragrafo-projetos"> Projeto de integração banco de dados Sql com Flask utilizando docker</p>
+                </div>
             </div>
 
             <div class="projetos-card">
                 <img src="./img/aws.jpeg" alt="Projeto 1" class="projetos-imagem">
-                <h3 class="">Serviços AWS</h3>
-                <p class="paragrafo-projetos"> Migração de banco de dados e processamento em nuvem utilizando automações de serviços AWS</p>
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">Serviços AWS</h3>
+                    <p class="paragrafo-projetos"> Migração de banco de dados e processamento em nuvem utilizando automações de serviços AWS</p>
+                </div>
             </div>
 
         </div>
@@ -70,12 +76,15 @@
     <section id="contatos" class="contatos">
         <h2 class="contatos-titulo">Contatos</h2>
         <form class="formulario-contato" id="formulario">
-            <div class="nome-form">
+            <div class="grupo-form">
                 <input placeholder="Nome" class="campo-form">
             </div>
             <div class="grupo-form">    
-                <textarea class="text-form" placeholder="Digite sua Mensagem"></textarea>
+                <textarea class="campo-form" placeholder="Digite sua Mensagem"></textarea>
             </div>
+
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
+
         </form>
     </section>
 
