@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Portfolio</title>
 </head>
 <body>
     <nav class="navegacao">
         <ul class="menu">
             <li>
-                <a href="#inicio">Início</a>
+                <a href="#inicio" class="menu-link">Início</a>
             </li> 
             <li>
-                <a href="#sobre">Sobre</a>
+                <a href="#sobre" class="menu-link">Sobre</a>
             </li>
             <li>
-                <a href="#projetos">Projetos</a>
+                <a href="#projetos" class="menu-link">Projetos</a>
             </li>
             <li>
-                <a href="#contatos">Contatos</a>
+                <a href="#contatos" class="menu-link">Contatos</a> 
             </li> 
         </ul>
     </nav>
 
-    <main id="incio" class="cabecalho">
+    <main id="inicio" class="cabecalho">
         <div>
             <img src="/img/duck.jpeg" alt="Foto de Mauricio R" class="foto-perfil">
             <h1>Rodolfo Mori</h1>
@@ -44,12 +45,41 @@
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
+            
             <div class="projetos-card">
-                <img src=""
+                <img src="./img/galaxy.jpeg" alt="Projeto 1" class="projetos-imagem">
+                <h3 class="">Análise de dados</h3>
+                <p class="paragrafo-projetos"> Modelo de predição de dados astronômicos</p>
             </div>
+            
+            <div class="projetos-card">
+                <img src="./img/banco-dados-img.png" alt="Projeto 1" class="projetos-imagem">
+                <h3 class="">Banco de dados</h3>
+                <p class="paragrafo-projetos"> Projeto de integração banco de dados Sql com Flask utilizando docker</p>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/aws.jpeg" alt="Projeto 1" class="projetos-imagem">
+                <h3 class="">Serviços AWS</h3>
+                <p class="paragrafo-projetos"> Migração de banco de dados e processamento em nuvem utilizando automações de serviços AWS</p>
+            </div>
+
         </div>
     </section>
+    
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Contatos</h2>
+        <form class="formulario-contato" id="formulario">
+            <div class="nome-form">
+                <input placeholder="Nome" class="campo-form">
+            </div>
+            <div class="grupo-form">    
+                <textarea class="text-form" placeholder="Digite sua Mensagem"></textarea>
+            </div>
+        </form>
+    </section>
 
+    
 </body>
 </html>
 
